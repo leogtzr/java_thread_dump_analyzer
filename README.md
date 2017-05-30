@@ -62,7 +62,7 @@ mysql> CREATE TABLE thread_info (hostname varchar(100), timestamp varchar(50), d
 #### lock_info
 You have to create lock_info table in mysql
 ```
-mysql> CREATE TABLE lock_info (hostname varchar(100), timestamp varchar(50), lock_if varchar(50), tid varchar(50), nid varchar(50), state varchar(50), owned int, primary key (hostname, timestamp, tid, nid));
+mysql> CREATE TABLE lock_info (hostname varchar(100), timestamp varchar(50), lock_id varchar(50), tid varchar(50), nid varchar(50), state varchar(50), owned int, primary key (hostname, timestamp, tid, nid));
 ```
 
 ## How to Build
